@@ -740,15 +740,6 @@
             </div>
 
             <div class="control-group">
-              <label for="zoomLevel">Zoom:</label>
-              <select id="zoomLevel">
-                <option value="0.5">50%</option>
-                <option value="0.75">75%</option>
-                <option value="1" selected>100%</option>
-                <option value="1.25">125%</option>
-                <option value="1.5">150%</option>
-                <option value="2">200%</option>
-              </select>
             </div>
           </div>
 
@@ -903,7 +894,6 @@
       const currentPageSpan = document.getElementById("currentPage");
       const prevPageButton = document.getElementById("prevPage");
       const nextPageButton = document.getElementById("nextPage");
-      const zoomLevelSelect = document.getElementById("zoomLevel");
       const xCoordSpan = document.getElementById("xCoord");
       const yCoordSpan = document.getElementById("yCoord");
       const coordsTableBody = document.getElementById("coordsTableBody");
@@ -1182,10 +1172,7 @@
       });
 
       // Zoom level change
-      zoomLevelSelect.addEventListener("change", function () {
-        scale = parseFloat(zoomLevelSelect.value);
-        queueRenderPage(pageNum);
-      });
+
 
       // Canvas mouse move event
       canvas.addEventListener("mousemove", function (e) {
