@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pdf-coordinate-finder.bref.news/sitemap.xml
