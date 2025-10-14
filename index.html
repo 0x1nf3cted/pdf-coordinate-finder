@@ -2,22 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>PDF Coordinate Finder - Mark and Save PDF Coordinates</title>
+    <title>PDF Coordinate Finder - Get X and Y Coordinates in PDF Online | Free Tool</title>
     <meta
       name="description"
-      content="Use this free tool to open PDF files, click to find coordinates, and export them easily. Ideal for developers and form designers."
+      content="Free online tool to find coordinates in PDF files. Click anywhere to get X and Y page coordinates instantly. Perfect for PDF form mapping and development."
     />
     <meta
       name="keywords"
-      content="PDF Coordinate Finder, PDF coordinates, get PDF coordinates, click coordinates PDF, interactive PDF tool"
+      content="pdf coordinates, find coordinates in pdf, get pdf coordinates, how to find coordinates in pdf file, pdf page coordinates, x and y coordinates pdf, pdf coordinate finder online"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="@ethosbyte" />
     <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="PDF Coordinate Finder" />
+    <meta property="og:title" content="PDF Coordinate Finder - Get PDF Coordinates Online" />
     <meta
       property="og:description"
-      content="Find and save coordinates in PDF files with this free developer tool."
+      content="Find and save X/Y coordinates in PDF files with this free developer tool."
     />
     <meta property="og:type" content="website" />
     <meta
@@ -41,23 +41,20 @@
       href="./apple-touch-icon.png"
     />
     <link rel="manifest" href="./site.webmanifest" />
-    <!-- Favicon -->
     <link
       rel="icon"
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📍</text></svg>"
       type="image/svg+xml"
     />
 
-    <!-- PDF.js Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
 
-    <!-- Schema.org Markup -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
         "name": "PDF Coordinate Finder",
-        "description": "A tool for developers to find and save coordinates on PDF files.",
+        "description": "Free online tool to find and get X and Y coordinates in PDF files. Click anywhere on your PDF to capture page coordinates for form mapping and development.",
         "applicationCategory": "WebApplication",
         "operatingSystem": "All",
         "author": {
@@ -84,9 +81,7 @@
       </div>
     </div>
 <style>
-/* Overlay background */
 .modal-overlay-accept {
-  /* Remove display: none from here */
   position: fixed;
   top: 0;
   left: 0;
@@ -96,10 +91,9 @@
   justify-content: center;
   align-items: center;
   z-index: 9999;
-  display: none; /* Keep this but we'll control it with JS */
+  display: none;
 }
 
-/* Rest of your CSS remains the same */
 .modal-accept {
   background: white;
   padding: 30px 20px;
@@ -127,14 +121,53 @@
   background-color: #f44336;
   color: white;
 }
+
+/* SEO Content Section */
+.seo-content {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  color: #444;
+}
+
+.seo-content h2 {
+  color: #2c3e50;
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.seo-content h3 {
+  color: #34495e;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.seo-content p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.seo-content ul {
+  margin: 15px 0;
+  padding-left: 30px;
+}
+
+.seo-content li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* Rest of your existing styles would go here */
 </style>
 
     <div class="container">
       <header>
-        <h1>PDF Coordinate Finder</h1>
+        <h1>PDF Coordinate Finder - Get X and Y Coordinates Online</h1>
         <p class="subtitle">
-          Upload a PDF file and click to find coordinates. Perfect for form
-          mapping, field positioning, and PDF form development.
+          Free tool to find coordinates in PDF files. Upload any PDF and click anywhere to instantly get X and Y page coordinates. Perfect for form
+          mapping, field positioning, and PDF development.
         </p>
       </header>
 
@@ -290,7 +323,6 @@
                   </tr>
                 </thead>
                 <tbody id="coordsTableBody">
-                  <!-- Saved coordinates will be added here -->
                 </tbody>
               </table>
             </div>
@@ -316,6 +348,51 @@
           </div>
         </div>
       </div>
+
+      <!-- SEO Content Section -->
+      <section class="seo-content">
+        <h2>How to Find Coordinates in PDF Files</h2>
+        <p>
+          Finding coordinates in PDF files is essential for developers working with PDF forms, document automation, and interactive PDFs. 
+          This free online PDF coordinate finder tool makes it easy to get the exact X and Y coordinates of any point on your PDF pages.
+        </p>
+
+        <h3>What Are PDF Coordinates?</h3>
+        <p>
+          PDF coordinates represent the position of elements on a page using an X and Y axis system. The origin point starts at the 
+          bottom-left corner of each page, with X values increasing to the right and Y values increasing upward. Understanding these 
+          coordinates is crucial for accurately positioning form fields, signatures, stamps, and other elements.
+        </p>
+
+        <h3>How to Get PDF Coordinates Online</h3>
+        <p>Using this tool is simple:</p>
+        <ul>
+          <li>Upload your PDF file using the file picker above</li>
+          <li>Click anywhere on the PDF page to capture coordinates</li>
+          <li>View the X and Y coordinates instantly in the sidebar</li>
+          <li>Save multiple coordinate points with custom field names</li>
+          <li>Export all coordinates as a JavaScript object for development</li>
+        </ul>
+
+        <h3>Common Use Cases for PDF Page Coordinates</h3>
+        <ul>
+          <li><strong>PDF Form Development:</strong> Position input fields, checkboxes, and signature boxes accurately</li>
+          <li><strong>Document Automation:</strong> Programmatically add content at specific locations</li>
+          <li><strong>PDF Stamping:</strong> Place watermarks, logos, or approval stamps precisely</li>
+          <li><strong>Form Field Mapping:</strong> Map existing form fields to data sources</li>
+          <li><strong>Testing & QA:</strong> Verify element positions in automated tests</li>
+        </ul>
+
+        <h3>Why Use This PDF Coordinate Finder?</h3>
+        <ul>
+          <li>100% free and online - no software installation required</li>
+          <li>Works entirely in your browser - your PDFs never leave your device</li>
+          <li>Real-time coordinate display as you move your cursor</li>
+          <li>Save and export multiple coordinate points</li>
+          <li>Works with any PDF file</li>
+          <li>Developer-friendly export format</li>
+        </ul>
+      </section>
 
       <div class="social-cta">
         <h3>Find this tool useful?</h3>
@@ -353,7 +430,6 @@
       </footer>
     </div>
 
-    <!-- Name Point Modal Dialog -->
     <div id="namePointModal" class="modal">
       <div class="modal-content">
         <h3 class="modal-title">Name this point</h3>
@@ -378,24 +454,20 @@ document.addEventListener("DOMContentLoaded", () => {
   const acceptBtn = document.getElementById("acceptBtn-accept");
   const stayBtn = document.getElementById("stayBtn-accept");
 
-  // Show the modal after a brief delay to ensure everything is loaded
   setTimeout(() => {
     updateModal.style.display = "flex";
-    document.body.style.overflow = "hidden"; // Prevent scrolling behind modal
+    document.body.style.overflow = "hidden";
   }, 500);
 
-  // Redirect on "Yes"
   acceptBtn.addEventListener("click", () => {
-    window.location.href = "https://pdf.42x.digital"; // replace with your URL
+    window.location.href = "https://pdf.42x.digital";
   });
 
-  // Close modal on "No"
   stayBtn.addEventListener("click", () => {
     updateModal.style.display = "none";
-    document.body.style.overflow = "auto"; // Re-enable scrolling
+    document.body.style.overflow = "auto";
   });
 
-  // Optional: Close modal when clicking outside the modal content
   updateModal.addEventListener("click", (e) => {
     if (e.target === updateModal) {
       updateModal.style.display = "none";
